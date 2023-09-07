@@ -7,7 +7,8 @@ My Notes about anything programming / tech related.
 - Its uses:
     * Running multiple Operating systems and computers from the same computer and operating system.
     * 
-#Superintelligence  
+#Superintelligence
+
 -Ways of reaching AGI:  
 *AI:  
 -core Features (These are Features that should be considered while developping and are not an after thought):  
