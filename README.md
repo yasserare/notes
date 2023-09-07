@@ -30,3 +30,7 @@ My Notes about anything programming / tech related.
    * biological cognition:
      - Actaully "Improving" the human brain through techniques such as iterative embryo selection and other techniques.
      - It will probably take too much to achieve superintelligence whereas Previous techniques like AI might have already reached superintelligence.
+
+# AGING
+- 
+
