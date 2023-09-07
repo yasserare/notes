@@ -27,4 +27,6 @@ My Notes about anything programming / tech related.
       - It does not need any Major breakthroughs but it needs very advanced technology.
       - The technological capabilities needed to reach whole brain emulation are much more then AI.
       - ALthough not entirely, This path is less dangerous than the AI path because we can see it coming from a mile way (not entirely) because it will needs to work on multiple organisms before it works on humans. (see Whole brain emulation roadmap)
-   *
+   * biological cognition:
+     - Actaully "Improving" the human brain through techniques such as iterative embryo selection and other techniques.
+     - It will probably take too much to achieve superintelligence whereas Previous techniques like AI might have already reached superintelligence.
