@@ -39,7 +39,7 @@ My Notes about anything programming / tech related.
 # SSH  
    * Secure Shell (which is not a shell at all, the name comes from the rsh program which is used for remote login) is a program that enables logging into a remote machine and excuting commands on that machine, it is also be used in other tools such as  sftp and scp to transfer files (s in sftp and scp stands secure and they are upgrades of ftp and rcp which are the original versions).
    * it core benefit is its security, thus replacing programs like telnet and rlogin which are both used for remote login and rhs for remote login.
-   * ssh is not a shel in the same sense of a bash, it does interpret commands or have commands history or anything like that.
+   * ssh is not a shel in the same sense of a bash, it does interpret commands or have commands history or anything like that.  
    `[questions to answer] `  
       `how does it really work ? like really ?`  
       `how do sys admins actually use it ? and how normal users can use it ?`  
