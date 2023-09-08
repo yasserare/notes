@@ -30,7 +30,11 @@ My Notes about anything programming / tech related.
    * biological cognition:
      - Actaully "Improving" the human brain through techniques such as iterative embryo selection and other techniques.
      - It will probably take too much to achieve superintelligence whereas Previous techniques like AI might have already reached superintelligence.
-
+   * brain-computer interfaces:
+     - Basically means cyborgs, Imagine something like DBS system for parkinson but way more advanced.
+     - but this path is unlikely because such system could cause so many complications and other paths are way more feasible and have lower risks for the safety of the user.
+   * Networks and organizations:
+      - Imagine a web or organization where only highly intelligent people connect with each other, share informations and their only objective individualy is to engage in highly intelectual disscusions.
 # AGING
 - 
 
