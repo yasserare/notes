@@ -37,8 +37,8 @@ My Notes about anything especially programming / tech related.
       - Imagine a web or organization where only highly intelligent people connect with each other, share informations and their only objective individualy is to engage in highly intelectual disscusions.
 # AGING  
 # SSH  
-   * Secure Shell (which is not a shell at all, the name comes from the rsh program which is used for remote login) is a program that enables logging into a remote machine and excuting commands on that machine, it is also be used in other tools such as  sftp and scp to transfer files (s in sftp and scp stands secure and they are upgrades of ftp and rcp which are the original versions).
-   * it core benefit is its security, thus replacing programs like telnet and rlogin which are both used for remote login and rhs for remote login.
+   * Secure Shell (which is not a shell at all, the name comes from the rsh program which is used for remote login) is a program that enables logging into a remote machine and excuting commands on that machine, it is also be used in other tools such as  sftp and scp to transfer files (s in sftp and scp stands secure and they are upgrades of ftp and rcp which are the original versions).  
+   * it core benefit is its security, thus replacing programs like telnet and rlogin which are both used for remote login and rhs for remote login.  
    * ssh is not a shel in the same sense of a bash, it does interpret commands or have commands history or anything like that.  
    `[questions to answer] `  
       `how does it really work ? like really ?`  
@@ -47,3 +47,16 @@ My Notes about anything especially programming / tech related.
 # apt vs aptitude:  
    * both package managers in linux systems.
 
+# Deep Work  
+   - at the 27th, farm log time asap and then disappear deep work for the rest of the month.  
+   - Ritualize:  
+        * Find a super peaceful place and work inside it for a long time and make it a habit.  
+        * Make boundaries, what you can and can't do during a deep work session some people might find it better to not use the internet at all or maintain a metric.  
+             - No phone Usage at all, No youtube, No Discord, no entertainment, No Music, break outside the work place, avoid small talks.  
+             - maybe think of a metrics (like reaching a predefined goal that you find appropiate).     
+        *  Create support, preparing and tweaking your body to work more deep:
+             - for some people it might be a good cup of coffee, for others it might be a good exercise.
+             - for me, I should not be hungry, tired (Sleep) or thinking (Meditation) about anything too much conciousely and unconciousely.  
+        * Make a grand gesture:
+             - Make huge efforts to provide a deep work session, the bigger the effort the better. This will conciousely and unconciousely will stress you (in a good way) to go deeper than usual.
+             - 
