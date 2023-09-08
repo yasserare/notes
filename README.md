@@ -1,5 +1,5 @@
 # notes
-My Notes about anything programming / tech related.
+My Notes about anything especially programming / tech related.
 
 
 # Virtualization
@@ -43,5 +43,7 @@ My Notes about anything programming / tech related.
    `[questions to answer] `  
       `how does it really work ? like really ?`  
       `how do sys admins actually use it ? and how normal users can use it ?`  
-       `read that summary`  
+       `read that summary`
+# apt vs aptitude:  
+   * both package managers in linux systems.
 
