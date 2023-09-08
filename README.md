@@ -35,6 +35,13 @@ My Notes about anything programming / tech related.
      - but this path is unlikely because such system could cause so many complications and other paths are way more feasible and have lower risks for the safety of the user.
    * Networks and organizations:
       - Imagine a web or organization where only highly intelligent people connect with each other, share informations and their only objective individualy is to engage in highly intelectual disscusions.
-# AGING
-- 
+# AGING  
+# SSH  
+   * Secure Shell (which is not a shell at all, the name comes from the rsh program which is used for remote login) is a program that enables logging into a remote machine and excuting commands on that machine, it is also be used in other tools such as  sftp and scp to transfer files (s in sftp and scp stands secure and they are upgrades of ftp and rcp which are the original versions).
+   * it core benefit is its security, thus replacing programs like telnet and rlogin which are both used for remote login and rhs for remote login.
+   * ssh is not a shel in the same sense of a bash, it does interpret commands or have commands history or anything like that.
+   `[questions to answer] `
+      `how does it really work ? like really ?`
+      `how do sys admins actually use it ? and how normal users can use it ?`  
+       `read that summary`  
 
