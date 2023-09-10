@@ -52,20 +52,24 @@ My Notes about anything especially programming / tech related.
    - Ritualize:  
         * Find a super peaceful place and work inside it for a long time and make it a habit.  
         * Make boundaries, what you can and can't do during a deep work session some people might find it better to not use the internet at all or maintain a metric.  
-             - No phone Usage at all, No youtube, No Discord, no entertainment, No Music, break outside the work place, avoid small talks, have a place where you only do deep work thus you automatically expect of yourself to focus intensely whenever you are in that environment.   
+             - No phone Usage at all, No youtube[except for learning, maybe use an extension that hides youtube conten], No Discord, no entertainment, No Music, break outside the work place, avoid small talks, have a place where you only do deep work thus you automatically expect of yourself to focus intensely whenever you are in that environment.   
              - maybe think of a metrics (like reaching a predefined goal that you find appropiate).     
         *  Create support, preparing and tweaking your body to work more deep:
              - for some people it might be a good cup of coffee, for others it might be a good exercise.
-             - for me, I should not be hungry, tired (Sleep) or thinking (Meditation) about anything too much conciousely and unconciousely.  
+             - for me, I should not be hungry or unhydrated, tired (Sleep) or thinking (Meditation) about anything too much conciousely and unconciousely.  
         * Make a grand gesture:
              - Make huge efforts to provide a deep work session, the bigger the effort the better. This will conciousely and unconciousely will stress you (in a good way) to go deeper than usual.
          
-# LVM (Logical Volume Management): 
+# LVM (Logical Volume Management):  
+   * IT is a form of Storage virtualization.  
    * It means making a pool of storage out of multilple storage devices, creating at least one logical volume and manipulating it with much more flexibility as needed. in noob terms, it means taking multiple storage devices and making them seem like one huge chunk of storage, Modifying that chunk(logical volume) as needed(creating new logical volumes, resizing them).  
    * Main terms:
         - Volume Groupe: The physical pool of storage devices.  
         - Logical Volumes: The partitions that are created in that volume Group.  
-   * It general Uses:  
-      -  
+   * It general Uses:
+      -  The ability to virtualze storage.  
+      -  For a better backup: you can create a snapshot volume that is an exact copy of the volume you need to backup, it saves in that exact moment you made that snapshot volume, you can do this while still working in that same original volume.
+      -  Resizing: unlike gparted for example, you can resize a partition regardless of its surrounding partitions state, meaning that you don't need a a logical volume to be contiguous with another free space to resize the logical volume.
+      -  you can do most operations without the need to run from a live OS, meaning you can do these operations without the need to reboot, umount or format anything.
    * sys admins Uses:  
      - 
