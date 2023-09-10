@@ -1,4 +1,4 @@
-# notes
+   # notes
 My Notes about anything especially programming / tech related.
 
 
@@ -59,4 +59,13 @@ My Notes about anything especially programming / tech related.
              - for me, I should not be hungry, tired (Sleep) or thinking (Meditation) about anything too much conciousely and unconciousely.  
         * Make a grand gesture:
              - Make huge efforts to provide a deep work session, the bigger the effort the better. This will conciousely and unconciousely will stress you (in a good way) to go deeper than usual.
-             - 
+         
+# LVM (Logical Volume Management): 
+   * It means making a pool of storage out of multilple storage devices and modifying with much more flexibility. in noob terms, it means taking multiple storage devices and making them seem like one huge chunk of storage.  
+   * Main terms:
+        - Volume Groupe: The physical pool of storage devices.  
+        - Logical Volumes: The partitions that are created in that volume Group.  
+   * It general Uses:  
+      -  
+   * sys admins Uses:  
+     - 
