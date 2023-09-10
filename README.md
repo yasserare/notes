@@ -71,5 +71,7 @@ My Notes about anything especially programming / tech related.
       -  For a better backup: you can create a snapshot volume that is an exact copy of the volume you need to backup, it saves in that exact moment you made that snapshot volume, you can do this while still working in that same original volume.
       -  Resizing: unlike gparted for example, you can resize a partition regardless of its surrounding partitions state, meaning that you don't need a a logical volume to be contiguous with another free space to resize the logical volume.
       -  you can do most operations without the need to run from a live OS, meaning you can do these operations without the need to reboot, umount or format anything.
+      -  (to be tested) You can LVM  your dual boot for much better use of storage.  
    * sys admins Uses:  
-     - 
+     - Increase A web server's storage without the need to take offline. (using classic partitions would push the sys admin to unmout and take the website offline).  
+     - Backup server data withsnapshots without the need to reboot or take the server offline.  †
