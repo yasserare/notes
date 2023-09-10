@@ -52,7 +52,7 @@ My Notes about anything especially programming / tech related.
    - Ritualize:  
         * Find a super peaceful place and work inside it for a long time and make it a habit.  
         * Make boundaries, what you can and can't do during a deep work session some people might find it better to not use the internet at all or maintain a metric.  
-             - No phone Usage at all, No youtube, No Discord, no entertainment, No Music, break outside the work place, avoid small talks.  
+             - No phone Usage at all, No youtube, No Discord, no entertainment, No Music, break outside the work place, avoid small talks, have a place where you only do deep work thus you automatically expect of yourself to focus intensely whenever you are in that environment.   
              - maybe think of a metrics (like reaching a predefined goal that you find appropiate).     
         *  Create support, preparing and tweaking your body to work more deep:
              - for some people it might be a good cup of coffee, for others it might be a good exercise.
