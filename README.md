@@ -59,6 +59,7 @@ My Notes about anything especially programming / tech related.
              - for me, I should not be hungry or unhydrated, tired (Sleep) or thinking (Meditation) about anything too much conciousely and unconciousely.  
         * Make a grand gesture:
              - Make huge efforts to provide a deep work session, the bigger the effort the better. This will conciousely and unconciousely will stress you (in a good way) to go deeper than usual.
+        * Open offices and 13 like places are great places for miracles to happen especially when there is diversity in disciplines, but it open working places should be combines with sound proof closed rooms(not necessarily this exact idea, it could be just your own home desk) for deep work.
          
 # LVM (Logical Volume Management):  
    * IT is a form of Storage virtualization.  
@@ -75,3 +76,15 @@ My Notes about anything especially programming / tech related.
    * sys admins Uses:  
      - Increase A web server's storage without the need to take offline. (using classic partitions would push the sys admin to unmout and take the website offline).  
      - Backup server data withsnapshots without the need to reboot or take the server offline.  †
+ # UFW:  
+    * What is a firewall ?  
+         - It is A software or device (usually a software), that monitors and filter network traffic thus providing a level of protection to the user.  
+    * UFW: It's a frontend program for the tool iptables which is an interface for using netfilter.  
+          - Netfilter is kernel-level program that actually does the packet filitering  and packet mangling.
+    * Packet: the actual Data and additional importan informations  
+         - Example: you visit a website => packet get sent to the server with your IP and the server's IP => server firewall accepts => server send you back the packet with the HTML code, ITs IP address and your IP address  and the source and destination ports in the header.  
+    * Packet filtering: Is the firewall's ability to accept or deny the passing of a packet based on predefined rules.  
+    * Packet mangling:  
+    * IP address: 
+    * Ports: 
+     
