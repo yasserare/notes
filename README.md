@@ -76,6 +76,8 @@ My Notes about anything especially programming / tech related.
    * sys admins Uses:  
      - Increase A web server's storage without the need to take offline. (using classic partitions would push the sys admin to unmout and take the website offline).  
      - Backup server data withsnapshots without the need to reboot or take the server offline.  †
+ # SUDO:
+    * Installed by "su root" then "apt install sudo".  
  # UFW:  
     * What is a firewall ?  
          - It is A software or device (usually a software), that monitors and filter network traffic thus providing a level of protection to the user.  
