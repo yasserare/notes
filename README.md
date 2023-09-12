@@ -92,6 +92,18 @@ My Notes about anything especially programming / tech related.
 # cron script:
 	* Wall: simply a command to that enables you to show a message to all users.  
  	* To stop a cronta: run `crontab -e` => delete the crontab command => save.
+  	* Infos:
+   		1 uname -a  
+     		2 lscpu
+       		3 free -h (-h for human readable format)
+	 	4 
+   		5 
+     		6 
+       		7 who -b
+	 	8 
+   		9 who
+     		10 
+       		11 sudo cat /var/log/sudo/sudo.log | grep COMMAND | wc -l (test it with minimal number of commands)
 [git and github]
 
 	-restore a file from the last commit
