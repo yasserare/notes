@@ -89,7 +89,9 @@ My Notes about anything especially programming / tech related.
     * Packet mangling:  
     * IP address: 
     * Ports: 
-     
+# cron script:
+	* Wall: simply a command to that enables you to show a message to all users.  
+ 	* To stop a cronta: run `crontab -e` => delete the crontab command => save.
 [git and github]
 
 	-restore a file from the last commit
