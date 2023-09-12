@@ -90,3 +90,374 @@ My Notes about anything especially programming / tech related.
     * IP address: 
     * Ports: 
      
+[git and github]
+
+	-restore a file from the last commit
+		git checkout <commit> <file>
+	-list last commit
+		git log
+	-list branches
+		git branch
+	-switch branches 
+		git checkout <nameofbranch>
+	-delete beanch
+		git branch -d <nameofbranch>
+	-create a new branch
+		git checkout -b <nameofnewbranch>
+	-Making a pull request
+		git add <FILES>
+		git commit -m "messgae"
+		git push origin <nameofbranch>
+		=> go to the original repository and create pull request
+	-reset to the original repo
+		git reset --hard origin/master
+	-contribute to repo that you deleted locally
+		re clone
+		git branch -a
+		git checkout <branchname>
+		make changes	
+[grep]
+	-Search for a word or sentce in the current directories and sub directories
+		grep -r "testKeyword" .	
+
+[Keyboard shortcuts and cli commands]
+	-Move current application to another workspace
+		shift + ctrl + alt + arrow 
+	-count how many lines ls will dispay
+		ls | wc -l 
+[algorithms]
+-steps tp accomplish a task
+	algorithm of solving coding problems:
+		-deeply understan the issue
+		-you will get a solution in mind, trying to come up with an aditional one 
+		-divide the solution into small parts
+		-implement the solution part by part
+
+[scanf]
+be wary of the following:
+	scanf("%c", &c) is not the same as scanf(" %c", &c) => the latter ignores any white spaces when reading input while the former does not.
+
+[make and makefile]
+make = automation tool 	=> generate executables and non-source files from source files
+makefile = file  => run tools according to the instructions in makefile 
+
+Make looks for makefile ( make file has instructions on how to generate the non-source files(example: executable, static library)).
+
+why do we need make ? we could just use the compiler directly.
+you could use the compiler directly but it is to much work(you'd need to specify each file you want to compile and there could be hundereds of source code files)
+make also has the advantage of running multiple different commands with 1 simple command 
+(instead of compiling to object files and then creating a static library => you could just run make and that's it)
+ syntax:
+- make RULES
+	target: dep
+		command
+*a rule is an instruction in makefile for make
+	target  = the target file we want to generate
+	dep	= are files that the target files need to have in order to exist
+	command = the command in which we will use dep to generate target 
+*you can specify which rule Make should start with but by default, it goes to the first rule.
+*when you run Make, it does not update all target files each time you run it, it instead compares target file with all of it dep, if it is newer than all of them,
+	it does nothing(target file being newer than all of its dep means that target file was the last created file in comparaison to its source files)
+
+================================================================
+[malloc] = allocate memory inside the heap in bytes
+	malloc asks OS 1 byte =>  OS searches the heap for it => if found => that byte marked as used => pointer to beginning of the block is returned
+								=> not found => do memory management operations => not found => return NULL
+	the allocated memory is not initialized with anything, if you want it to be initiliazed use calloc.
+[OS]
+1 transistor = 1 bit
+	16 gb of ram = 128000000000 bits = 128000000000 transistors
+the binary for the digit 1 = 00000001 = 7 off transistors and 1 on
+=== the key press pipeline ===
+Atoms = The smallest thing in the universe, everything in the universe  consists of atoms
+	Its syntax (hh) ATOM = nucleus(protons + neutrons) + electrons( orbiting around the nucleus).
+[bootloaders]
+the first program a PC runs when started or restared. It tests the hardware (check if each hardware component(CPU, RAM, strage device ....) is working properly)for the OS
+
+[libft]
+A variable is a storage area in memory nad has the following characterestics:
+	1. name
+	2. data type
+	3. value
+	4. Scope (global vs local)
+	5. lifetime (throughout the whole program lifetime or a function's lifetime)
+dynamicaly allocated memory (such as with malloc) is stored in the heap.
+Integer Overflow is when we assign a variable a value that bigger than the biggest value it can represent 
+Integer Underflow is when we assign a variable a value that smaller than the value that it can represent
+
+size_t (unsigned int) => it's not overflow, it's wrapping back to 0 (https://wiki.sei.cmu.edu/confluence/display/c/INT30-C.+Ensure+that+unsigned+integer+operations+do+not+wrap)
+	size_t x = SIZE_MAX; x + 1 => printing x would print 0
+size_t == unsigned integer 
+size_t x = 0; x - 1 would wrap. 
+
+Memory leaks
+	
+[strlcat]
+	the reason for the if statemnent is because if size == 0 then (size - 1 == huge positive number)
+what is a static library ? it is the collection of the object files. its purpose is to cut down time and effort for programmers and make it easier to code.
+what is Locale in isalpha ? a "locale" the a set of cultural settings(language for example)
+	example: if current user's locale is set to greek, isalpha would consider the character 'β' a alphabetical character since it is a greek character
+			but it won't consider it a alphabetical character if the locale is set to english because it is not a english alphabet.
+why main has type int and returns 0 ?
+	by convention, 0 implies to the OS that the program ran succesfully, if a non-zero value is returned, it indicates to the OS that the program did not run
+		correctly. that information (that a program ran correctly or not) is useful for the user so they know that the program did not work as intended
+			(the programmer can show an error based on that return value of non-zero)
+isalpha and such functions use int instead of char because int is big enough to hold characters and all also the value EOF(end of file).
+Overlap is when two memory areas share bytes, it becomes a problem when copying memory areas when the source area is prior to the destination are.		
+toupper uses Int as argumnet and return value, so it can handle "EOF", data type char cannot handle EOF since it is 4bytes.
+		EOF is a value of no particular data type, it represents the end dof a file.
+strchr uses int argument purely for historical reason, strchr existed when C had no protoype when declared and libc function's declarations arguments had not data types.so, any function argument with no data type gets promoted to int(which still exists to this day) and they kept it that way.
+
+Why is there is such thing as signed and unsigned char ? 
+why strncmp an memchr use unsigned char  ?
+why does memchr uses unsigned char in comparison instead of char ?
+what is the roel of pointer types ?	
+why nil gets printed instead of null in memchr?
+
+[C language]
+lvalue = left-hand value
+rvalue = right-hand value
+long, short = these are qualifiers, not data types. they are usually used with integer data types such as: int and float.
+		data types are usually ommited when using qualifiers(long long = long long int)
+character constants are not of type char, they are promoted to int [sizeof('a') == sizeof(int)]
+=== making the library===
+we use ar (which is an archiving tool)
+we have to use the flags (rc) with it to rell it what operations to run
+	ar -rc lib.a objecfile.o
+r: add object files (or replace them) to lib.a
+c: create the archive lib.a
+=== removeing files rm ====
+when removing files, we use "-f" flag = it does not show the error if the file to be removed does not exist
+
+[gdb]
+gdb is a tool that helps you investigate seg fault
+	run < input.txt => this will run the program using input from the text file "input.txt"
+
+[printf]
+variadic functions = functions that can take changing(non-fixed) number of arguments of unkown type.
+ellipses == ... 
+	it's the syntax of a variadic function. example => void func(int x, char c, ...)
+[README.md]
+	# this will display the text bigger (like an h1)
+	> grayed out text
+[File descriptor]	
+	File descriptor is non negative integer, it works as process-unique identifier for a specific file.
+	-Use fileno(file) to print the file descriptor of a file.
+	-integers 0, 1 and 2 are reserved for the standard streams input, output and error.
+	-Each process has its own fd table, 0, 1 and 2 are reserved which makes the table start from the integer 3.
+	-the process speaks to the fd which speaks to the shell
+	-Each peripheral with your pc is represented as a file (device file) in the unix file system.
+		[stdin, stdout, stderr] 
+			-stdin(by default is the keyboard)
+				its fd is 0
+			-stdout(by default is the screen)
+				its fd is 1
+			[redirection]
+				*you can redirect the standard input and output to files
+					example of stdout redirection:	ls (this is a normal example of stdout) / ls > file.txt (is an example of stdout redirection)
+[get_next_line]
+	[static variables]
+		-They are only initialized once.
+		-"normal" local variables are destroyed when their scope(function) is destroyed
+					 
+[vim]
+	-copy for one file to another:
+		:e nameoffile
+	-remove first two charactes from each line:
+		:%s/^..// (% = every line, ^.. = first two characters, / = replace with empty string)
+	-add tab to each line:
+		:%s/^/\t/
+	-move cuurent line a certain number(in this example two lines) of lines
+		:move .+2
+	-redo 
+		:redo or ctrl+r
+	-remove all line starting from line 83
+		:83,$d => the "$" is for the last line
+	-save readonlyfile 
+		:w !sudo tee %
+	-set file name to vim window
+		:set title
+	-copy a line by number:
+		:56y and then press "p" (this will copy line number 56)
+	-replace all instances of a variable name (or just text in general) by another
+		:%s/old_var/new_var/g
+			g = is to replace all instances of that var, removing it will only replace the first instance
+	(not really a vim command but seems appropriate here)
+	-copy the content of a file to the clipboard
+		cat main.c | xclip -sel clip
+[virtualization] 
+
+[extreme C]
+source code = programming statments(c code)
+COMPILATION PIPELINE
+	preprocessor => compiler => assembler => linker
+		*each step is vital
+header files are files that containe(among other things) functions declarations
+	functions definitions are not included in header files
+	a collection of header files alongside source code files is a library
+INITAILLY, in every c program, 3 types of files are involved:
+	1.header file (which containes the function declaration among other things)
+	2.source file that contains the functions defintion
+	3.source file that contains the main function where the program starts(main)
+
+1.[preprocessor]
+	-removes comments
+	-handles directives
+	-literally copies and paste the content of the header files specified
+	result: a single file that has a block of code that contains header files
+			 content alongside the c code you wrote
+			 (translation unit aka compilation unit .i format)
+	run: gcc -E file.c => to get the translation unit
+2.[compilation]
+	-converts translation unit into assemby code
+		-assembly is different from cpu to another(host/target architecture)
+	run: gcc -S file.c => to get the assembly code
+	outputs a file with the extension .s
+3.[assembly]
+	-converts assembly code into machine code (object file)
+	run: gcc -c file.c to do the above three processes and get an object file
+4.[linker]
+	-creates the excutable(.out in unix or .exe in windows)
+		it links the object file of the c code we wrote with the object 
+			file of c code that has the functions's definition.
+			
+compiler
+	how most compilers convert the same c code into the assembly of the target cpu
+	compilers use a two steps operation to convert c code(translation unit) into assembly of target cpu
+		frotend: archtecture independent(can be done in any cpu)
+			turning translation unit into AST(abstract syntax tree)
+				AST is a data structure that any programming language can understand
+					hence the word abstract(maybe)
+		backend: architecture dependent  
+assembler
+	there are two things that control the object file format 
+		1.hardware (architecture)
+		2.OS
+	for example:
+			MACH-O is the Object file format for MAC OS
+			ELF is the object file format for linux
+The entry point of a c program is the main function
+	the entry point of an object file is platform deprendent
+types of object files:
+	1.relocatable object files
+		.o extension: contain machine code
+	2.executable object file
+		.out contains machine code ready to excute
+		it has multiple relocatable object files
+
+
+MEMORY
+	garabage collector is a mempry component that is responsible for deallocation
+	In c, there is no such thing as garbage collector unlike languages like java
+		and c#
+	when an excutable object file is running, it is called a process.
+	a process has two memory layouts
+	a static memory layout and a dynamic memory layout
+		1.static memory layouts of a porcess come from the excutable object file
+		2.dynaimc memory layout of same process is built while process is loading
+	Static memory layout
+	run: size -m ex4_2-macos.out => to get static layout
+		bss segement
+			reserved to host uninitialized global variables and global 
+				variables set to 0
+		data segement
+			reserved to host initialized global variables set to a non zero value
+		text segement
+			reserved for code you wrote
+	dynamic memory layout (DML)
+		when a process is runing, a program called the loader start the excution
+			by first, forming the dynamic memory layout.
+		it forms DML by copying the static memory layout and adding two more 
+			segements		
+		in addition to the static memory layout(bss, data, text), 2 more segments
+			are added: stack and heap
+[153 as explained before]
+
+
+[memchr]
+	why does it use int as second argumnet ?
+		For historical reasons, memchr exist where there as no such thing as prototype, void *memchr(); /* non-prototype declaration */
+			so every argument got implicit promotion.(char => int)
+			for the sake of legacy libraries that used memchr in that form not breaking, they kept it.
+	why unsigned char ?
+		char => to compare each byte
+		unsigned => 
+[memcmp]
+	why unsigned?
+		portability, the signdness of char is machine dependent which can cause problems MAYBE.
+	why that second if statement ?
+		if n == 5 and str1= "hellox" str	2="helloy" 
+[memcpy]
+	why unsigned?
+[memmove]
+	why unsigned ?
+	handles overlap => when to memory areas have common bytes
+		ex: abcd => src
+		      cdef => dst and len == 4	
+[memset]
+	why int ?
+		same as memchr
+	why unsigned ?
+
+[ft_putchar_fd]
+	what is a fd ?
+		A non negative integer that act like a handle to a file in each process.
+		Each process has a fd table, 0, 1, 2 are reserved to stdin, stdout, stderr.
+		stdin refers the default output stream...usually terminal.
+[putnbr]
+	recursion ?
+		function calling itself.
+[is...]
+	why they use int as argument ?
+		to include EOF which is 4 bytes
+[atoi itao]
+	Implicit type conversion
+
+[strchr strrchr]  
+	why uses int ?
+		same as memchr
+	the char type cast is for 1024
+
+[strlcat]
+	test strlcat
+	change strlcat
+
+[ifndrf direcetive]
+	header guard so that the header does not get included more than once.  
+
+
+
+ 	ask OBJS = $(SRCS:.c=.o)
+*Variadic functions are functions that accept non-fixed number and different data types
+*Macros are just pieces of codes that are stored somewhere and are pasted in preprocessing
+	most languages don't have preprocessers, it's known to exist in C.
+
+ar -r => create archive if it does not exist, add new files or replace chhanged files
+ar -c => does the job silentely without printing informational message
+rm -f => do not show confirmation question (create a file with 444 and remove it) and do not show "file does not exist" if file does not exist and you try deleting
+rm -r => this flag needed to delete directories and subdirectories
+(...) epilipse => syntax used by functions and macros to denote variable number of arguments
+substituotion makefile => replaces the suffixe .c to .o
+		the compilation => there an implilcit rule that commpiles
+CFLAGS 	=> changing it would make it not compile with those flags
+		IT is a variable used by implicit rules
+Macros are just pieces of code that are replaced by the preprocessor.
+	#define test 4 => will replace all occurences of test by 4.
+	Macros and functions are similar in the fact that they encompass code to be used later.
+the header guards #ifndef #define are macros 
+va_list is a type just like an int and char are types
+va_start
+	it initializes ap meaning it prepares to be used by va_arg and va_and
+	the second argument (last known parameter in the function) is then used to access the other arguments
+va_arg
+	a macro
+	in a first invocation, it returns the argument after the last known argument and so on and on in each invocation
+va_end 
+	a macro
+	signals that you are finished with va_list and we don't need to access any argument.
+	it does clean up
+
+unsigned int => int type that only represents 0 and postive integers 
+		since it can't hold a positive number, which is represneted in the first byte. 
+arhcive contains the object files of the compiled source code.
+%i and %d are similar except that %i can print integers using their octal and hexadecimal representations 
