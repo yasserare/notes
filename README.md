@@ -130,6 +130,9 @@ My Notes about anything especially programming / tech related.
 		git branch -a
 		git checkout <branchname>
 		make changes	
+  	-display git commits history / see divergent branches
+		git log --graph --oneline --all
+
 [grep]
 	-Search for a word or sentce in the current directories and sub directories
 		grep -r "testKeyword" .	
