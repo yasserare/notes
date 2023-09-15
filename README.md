@@ -44,6 +44,8 @@ My Notes about anything especially programming / tech related.
       `how does it really work ? like really ?`  
       `how do sys admins actually use it ? and how normal users can use it ?`  
        `read that summary`
+  * port 22 is the defult for ssh (use `sudo systemctl status ssh`).
+  * to change the port, edit the fike `/etc/ssh/sshd_config` and restart the service using `sudo systemctl restart ssh`  
 # apt vs aptitude:  
    * both package managers in linux systems.
 
@@ -89,6 +91,18 @@ My Notes about anything especially programming / tech related.
     * Packet mangling:  
     * IP address: 
     * Ports: 
+    	- write meaning here  
+      	- install ufw using apt, enable it using `sudo ufw enable`, allow a specific port using `sudo ufw allow 4242/tcp or (4242/udp)`   
+        - sudo ufw status is also a useful cool command.  
+# hostname:  
+    * Research its purpose.  
+    * use `hostname` to display the current hostname.  
+    * use `sudo hostname new-hostname`  to temporarily change the current sessions hostname.  
+    * to change the hostname forever, edit the files: `/etc/hostname` and `/etc/hosts`.  
+# groups and users:  
+    * Create a new group: sudo groupadd nameofthegroup.  
+    * Add users to a group, sudo usermod -aG groupsname user.  	
+    * Create a user: sudo adduser nameofthenewuser.  
 # cron script:
 	* Wall: simply a command to that enables you to show a message to all users.  
  	* To stop a cronta: run `crontab -e` => delete the crontab command => save.
