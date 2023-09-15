@@ -48,7 +48,8 @@ My Notes about anything especially programming / tech related.
   * to change the port, edit the fike `/etc/ssh/sshd_config` and restart the service using `sudo systemctl restart ssh`  
 # apt vs aptitude:  
    * both package managers in linux systems.
-
+# Computer architecure:  
+   * 
 # Deep Work  
    - at the 27th, farm log time asap and then disappear deep work for the rest of the month.  
    - Ritualize:  
