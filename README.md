@@ -37,9 +37,23 @@ My Notes about anything especially programming / tech related.
       - Imagine a web or organization where only highly intelligent people connect with each other, share informations and their only objective individualy is to engage in highly intelectual disscusions.
 # AGING  
 # AppArmor  
-   * Kernel Level Security application for linux, it's used to sandboxe files and applications and give the, the ,minimum previlege needed.
+   * Kernel Module Security application for linux, it's used to sandboxe process and give the minimum previlege needed.
    * to check if it is enabled `aa-status`.
-   * 
+   * It is used to confine process from accesing files they should not have access to.
+   * example: A server hosting multiple websites, confine each website and give it least previlege needed to prevent it from accessing other ressources even if it is compromised.
+   * A website in /home/user/Documents/website-name/ shoulde not have access to files in /home/user/Documents/website_number_two/ or why give it access to system calls or the camera when it does not need them.
+   * it difference with SELinux: 
+   ? Does it prevent website process (in the example of a server hosting mutiple websites) from accessing other ressources [try it maybe].
+# lsblk  
+	* tool to list block devices (storage devices).  
+# disk Signature  
+   * A long hexadecimal which is the ID of the virtual disk.  
+   * It is a security mechanisme to prevent the alteration of the virtua disk.  
+   * It is created using the shasum command (see the subject for more informations).  
+   ? LOOK INTO HOW DOES SHASUM PREVENT SIGNATURE DUPLICATION.
+# debian vs rocky  
+	* I chose debian because i am familiar with installing debian based os's, and also because the subject claim that it is easier to install debian than rocky.  
+ 	? maybe just maybe try to install rocky os.  
 # SSH  
    * Secure Shell (which is not a shell at all, the name comes from the rsh program which is used for remote login) is a program that enables logging into a remote machine and excuting commands on that machine, it is also be used in other tools such as  sftp and scp to transfer files (s in sftp and scp stands secure and they are upgrades of ftp and rcp which are the original versions).  
    * it core benefit is its security, thus replacing programs like telnet and rlogin which are both used for remote login and rhs for remote login.  
