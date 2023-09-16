@@ -36,6 +36,10 @@ My Notes about anything especially programming / tech related.
    * Networks and organizations:
       - Imagine a web or organization where only highly intelligent people connect with each other, share informations and their only objective individualy is to engage in highly intelectual disscusions.
 # AGING  
+# AppArmor  
+   * Kernel Level Security application for linux, it's used to sandboxe files and applications and give the, the ,minimum previlege needed.
+   * to check if it is enabled `aa-status`.
+   * 
 # SSH  
    * Secure Shell (which is not a shell at all, the name comes from the rsh program which is used for remote login) is a program that enables logging into a remote machine and excuting commands on that machine, it is also be used in other tools such as  sftp and scp to transfer files (s in sftp and scp stands secure and they are upgrades of ftp and rcp which are the original versions).  
    * it core benefit is its security, thus replacing programs like telnet and rlogin which are both used for remote login and rhs for remote login.  
