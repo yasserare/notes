@@ -140,8 +140,18 @@ My Notes about anything especially programming / tech related.
        		11 sudo cat /var/log/sudo/sudo.log | grep COMMAND | wc -l (test it with minimal number of commands)  
 # Strong password policy  
 	* Install libpam-pwquality (to be researched).  
-	* First three rules, edit variables `PASS_MAX_DAYS`, `PASS_MIN_DAYS` and `PASS_WARN_DAYS`.  
- 	* forth rule, edit variables `maxrepeat`, `minclass`, `minlen` in /etc/security/pwquality.conf (proofcheck).  
+	* First three rules, edit variables `PASS_MAX_DAYS`, `PASS_MIN_DAYS` and `PASS_WARN_DAYS` in the file /etc/login.defs.    
+ 	* Edit the file  /etc/pam.d/common-password in the line under [ #here are the per-package modules (the "Primary" block)]: 
+  		`
+		minlen=10 - Sets the minimum acceptable size for the new password to 10.
+    		ucredit=-1 - The password must contain an uppercase letter.
+    		dcredit=-1 - The password must contain a digit.
+    		maxrepeat=3 - The password must contain more than 3 consecutive identical characters.
+    		reject_username - The password must not include the name of the user.
+    		difok=7 - The password must have at least 7 characters that are not part of the former password (does not apply to the root password).
+    		enforce_for_root - The root password has to comply with this policy.
+		`
+  	* sudo chage -M 30 <user> and sudo chage -m 2 <user> expiary dates for both user.  
   	
 [git and github]
 
