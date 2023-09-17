@@ -62,8 +62,9 @@ My Notes about anything especially programming / tech related.
       `how does it really work ? like really ?`  
       `how do sys admins actually use it ? and how normal users can use it ?`  
        `read that summary`
+  * Install ssh => sudo apt install openssh-server  
   * port 22 is the defult for ssh (use `sudo systemctl status ssh`).
-  * to change the port, edit the fike `/etc/ssh/sshd_config` and restart the service using `sudo systemctl restart ssh`  
+  * to change the port, edit the file `/etc/ssh/sshd_config` and restart the service using `sudo systemctl restart ssh`  
 # apt vs aptitude:  
    * both package managers in linux systems.
 # Computer architecure:  
@@ -136,7 +137,12 @@ My Notes about anything especially programming / tech related.
 	 	8 
    		9 who
      		10 
-       		11 sudo cat /var/log/sudo/sudo.log | grep COMMAND | wc -l (test it with minimal number of commands)
+       		11 sudo cat /var/log/sudo/sudo.log | grep COMMAND | wc -l (test it with minimal number of commands)  
+# Strong password policy  
+	* Install libpam-pwquality (to be researched).  
+	* First three rules, edit variables `PASS_MAX_DAYS`, `PASS_MIN_DAYS` and `PASS_WARN_DAYS`.  
+ 	* forth rule, edit variables `maxrepeat`, `minclass`, `minlen` in /etc/security/pwquality.conf (proofcheck).  
+  	
 [git and github]
 
 	-restore a file from the last commit
