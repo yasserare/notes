@@ -100,6 +100,16 @@ My Notes about anything especially programming / tech related.
      - Backup server data withsnapshots without the need to reboot or take the server offline.  †
  # SUDO:
     * Installed by "su root" then "apt install sudo".  
+    * configuration:
+    	- The configuration is done in visudo.  
+     	- Defaults requiretty
+     	- Defaults passwd_tries=3 - To set the number of password attempts when using sudo to 3.  
+	- Defaults badpass_message="Wrong password" - The error message due to a wrong password.  
+	- Defaults logfile="/var/log/sudo/sudo.log" - To create and set the log file.  
+	- Defaults log_input,log_output - To create the logs of the inputs and outputs of every use of sudo.  
+	- Defaults iolog_dir="/var/log/sudo" - The directory where those logs will be stored (created previously).  
+	- Defaults secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin" - To restrict the PATHs that can be used by sudo specifically to those specified.  
+ 	- TTY: 
  # UFW:  
     * What is a firewall ?  
          - It is A software or device (usually a software), that monitors and filter network traffic thus providing a level of protection to the user.  
