@@ -145,6 +145,7 @@ My Notes about anything especially programming / tech related.
   		`
 		minlen=10 - Sets the minimum acceptable size for the new password to 10.
     		ucredit=-1 - The password must contain an uppercase letter.
+      		lcredit=-1 - The password must contain an lowercase letter.
     		dcredit=-1 - The password must contain a digit.
     		maxrepeat=3 - The password must contain more than 3 consecutive identical characters.
     		reject_username - The password must not include the name of the user.
