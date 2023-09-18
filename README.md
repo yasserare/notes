@@ -133,6 +133,7 @@ My Notes about anything especially programming / tech related.
     * Create a new group: sudo groupadd nameofthegroup.  
     * Add users to a group, sudo usermod -aG groupsname user.  	
     * Create a user: sudo adduser nameofthenewuser.  
+    * Get users of a group.  
 # cron script:
 	* Wall: simply a command to that enables you to show a message to all users.  
  	* To stop a cronta: run `crontab -e` => delete the crontab command => save.
