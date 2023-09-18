@@ -64,7 +64,9 @@ My Notes about anything especially programming / tech related.
        `read that summary`
   * Install ssh => sudo apt install openssh-server  
   * port 22 is the defult for ssh (use `sudo systemctl status ssh`).
-  * to change the port, edit the file `/etc/ssh/sshd_config` and restart the service using `sudo systemctl restart ssh`  
+  * to change the port, edit the file `/etc/ssh/sshd_config` and restart the service using `sudo systemctl restart ssh`
+  * ip a - To check the IP to use for connect from the host terminal.
+    	ssh <vmusername>@<vmip> -p 4242 - (In the host terminal) to connect to the VM using ssh.
 # apt vs aptitude:  
    * both package managers in linux systems.
 # Computer architecure:  
