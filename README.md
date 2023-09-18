@@ -541,10 +541,10 @@ arhcive contains the object files of the compiled source code.
 [born2beroot V2]
 [Signature]
 	- A hexadecimal(base 16 number that uses alphabets to represent numbers beyond 9) which is a unique ID used to verify the authenticity of data.
-	- Shasum is a tool that generates such signatures "signature file", and a minor change in the file would change the signature.
+	- Shasum is a tool that generates such signatures by the command "shasum file", and a minor change in the file would change the signature.
 	- It is used as a way to establish trust and security, with it you can verify if the vdi was altered in some way, someone could replace the image for example.
 	- It is also used by OS developpers to verify the authenticity of ISO files.
-	!!!!! TODO: Verify the need for signature by doing.
+	!!!!! TODO: Verify the need for signature by doing. (sign it => change files in the os => check the signature, it should be changed)
 
 [Virtual machine]
 	- Virtualization: Creating the virtual version of physical system, in this case it is a Computer with its operating system.
@@ -558,6 +558,7 @@ arhcive contains the object files of the compiled source code.
 		* OS and low level development.
 		* Cybersecurity analysis and training.
 	- The major difference between rock and debian is that:
+		* Debian is easier to setup than rocky.
 		* Debian was created as a general purpose OS suitable for a lot of use cases such as: servers, desktops and other use cases...
 		* Rocky was created heavily to be used as in servers, it was also created as a replacement of centOS in mind.
 		* CentOS's change of policy pushed the need to create rocky os, one of the changes that push them was lack of LTS.
@@ -566,7 +567,8 @@ arhcive contains the object files of the compiled source code.
 		* Debian uses APT and rokcy uses yum, this is a basic difference among many others.
 	- APT (advanced package tool) a tool to manage(install packages, update them, remove them) packages and software. it just makes the package installation 
 		process much easier.
-		* apt and aptitude are pretty much the same thing, they are both package managers, what aptitude has that apt does not is the text based UI.
+		* apt and aptitude are pretty much the same thing, they are both package managers, what aptitude has that apt does not is the text based UI, and apt
+			is used by aptitude.
 				(run "aptitude" alone).
 	- APPARMOR is a linux security application, it used to sandbox apps meaning define which ressources those apps have access to, the goal is to give apps 
 		the minimum previlige possible.
@@ -574,6 +576,7 @@ arhcive contains the object files of the compiled source code.
 		Example: 
 			- Prevent a compromised website from accessing the files of another if they are in the same server.
 			- Why would you give a game the access to the laptop camera when it does not need it.
+		!!!!!!TODO: go more into that first example 
 	- Password policy
 		Advantages:
 			Security i the main advantage of strict password policy.
@@ -596,10 +599,16 @@ arhcive contains the object files of the compiled source code.
 			and prevent accidents.
 		* Spoody example.
 	- UFW
-		* Program user interface for netfilter firewall.
-		* firewall: A program that monitors network traffic.
-		* netfilter: 
-		!!!!!!TODO: redo this part
+		* UFW is A program that works as a frontend for netfilter firewall, it makes it easier to use.
+		* Firewall: A program that monitors network traffic, allowing or denying dat packets based on pre defined rules.
+		Example: Allow ssh access from a specific IP address only.
+			 Block your website access from a specific country or IP.
+			 Students not having access to school's website from inside the school.
+		* Ports are just numbers that are associated with a certain service in the server, for example, port 22 is associated with SSH access, port 443 is
+			associated with HTTPS... it is a way for the server to organize itself and these services.
+			- You type google URL in the browser, it gets turned into an IP address and a port associated with HTTPS or http, the server evaluate which 
+			service is asscoiated with that port, it then verify if you have access to that service through that port and act accordignly.
+		* Not all ports are associated with a service. 
 	- SSH
 		* A program that allows you to connect to computer/server and execute commands in that machine remotely in a secure way.
 		* sys admins use it to troublshoot servers, send and recieve files to be physically where the server is.
@@ -609,8 +618,11 @@ arhcive contains the object files of the compiled source code.
 		!!!!!!TODO: go a bit more into how its advantages work.
 	- cron
 		* A program that enables you to run shell commands periodicaly and automatically.
-		* its uses:
+		* Its uses:
 			- Periodically Backup the system.
 			- Periodically update thes system. 
 			- Periodacilly Send reports about the current state of the server or website, or send emails in case of problems.
-		!!!!!!!TODO: understand how it works better especially those cron commands.
+		* Script Output:
+			- 
+		!!!!!!!TODO: understand how it works better especially those cron commands, and understand those outputs and their commands.
+
