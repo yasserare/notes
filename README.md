@@ -538,3 +538,60 @@ unsigned int => int type that only represents 0 and postive integers
 		since it can't hold a positive number, which is represneted in the first byte. 
 arhcive contains the object files of the compiled source code.
 %i and %d are similar except that %i can print integers using their octal and hexadecimal representations 
+[born2beroot V2]
+[Signature]
+	- A hexadecimal(base 16 number that uses alphabets to represent numbers beyond 9) which is a unique ID used to verify the authenticity of data.
+	- Shasum is a tool that generates such signatures "signature file", and a minor change in the file would change the signature.
+	- It is used as a way to establish trust and security, with it you can verify if the vdi was altered in some way, someone could replace the image for example.
+	- It is also used by OS developpers to verify the authenticity of ISO files.
+	!!!!! TODO: Verify the need for signature by doing.
+
+[Virtual machine]
+	- Virtualization: Creating the virtual version of physical system, in this case it is a Computer with its operating system.
+	- Another example of virtualization is Storage Virtualization which is taking multiple physical storage devices and making a virtual storage pool out of them.
+	- A vm is virtual computer.
+	- It works exactly like a physical computer, it essentially a bunch of files like configuration file and disk image(usually an ISO) that gets handled by 
+		software like virtualbox, it is completely seperate from the host machine.
+	- It uses:
+		* Running multiple servers in the same hardware.
+		* Trying and using other operating systems.
+		* OS and low level development.
+		* Cybersecurity analysis and training.
+	- The major difference between rock and debian is that:
+		* Debian was created as a general purpose OS suitable for a lot of use cases such as: servers, desktops and other use cases...
+		* Rocky was created heavily to be used as in servers, it was also created as a replacement of centOS in mind.
+		* CentOS's change of policy pushed the need to create rocky os, one of the changes that push them was lack of LTS.
+		* The primary goal of development infleunces the development process, debian might focus on desktop environement more than rocky and focus less on 
+			Security and provide LTS.
+		* Debian uses APT and rokcy uses yum, this is a basic difference among many others.
+	- APT (advanced package tool) a tool to manage(install packages, update them, remove them) packages and software. it just makes the package installation 
+		process much easier.
+		* apt and aptitude are pretty much the same thing, they are both package managers, what aptitude has that apt does not is the text based UI.
+				(run "aptitude" alone).
+	- APPARMOR is a linux security application, it used to sandbox apps meaning define which ressources those apps have access to, the goal is to give apps 
+		the minimum previlige possible.
+		* it is like sudo but for apps instead for users.
+		Example: 
+			- Prevent a compromised website from accessing the files of another if they are in the same server.
+			- Why would you give a game the access to the laptop camera when it does not need it.
+	- Password policy
+		Advantages:
+			Security i the main advantage of strict password policy.
+		Disadvnatages:
+			Forgetting the password and risking getting locked out is tha main disadvantage.
+	!!!!!!TODO: The advantage and disadvantge of the that password policy implemntation.
+	- LVM
+		* It is a type of virtualization, Storage virtualization.
+		* Enables you to partion your storage devices, An example is allocating different partitions for the home directory and logs directory, putting them
+			in the same partition will prevent loggin in case that partition got full, it is also useful to use it to seperate the root directory and 
+			the home directory to avoid problems.
+		* Scalibility, Using LVM allows to scale up your storage without the need to move data, backup tha date or take the system down, you can literaly 
+			hook up the new storage device and start working.
+		*Backup: LVM uses snapshots, with it you back up your data at point in time. 
+		* non linear resizing opposed to classical partitions.
+	- SUDO
+		Sudo is a program that temporarily gives users root previlege.
+		Why the need for sudo ? different users need different previlges, a system admin has to have root access to better manage the system.
+		but why not just be root all the time ? why do we need sudo and its temprarily access ? to prevent malicious programs from compromising the system 
+			and prevent accidents.
+		* Spoody example.
