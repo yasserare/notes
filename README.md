@@ -595,3 +595,22 @@ arhcive contains the object files of the compiled source code.
 		but why not just be root all the time ? why do we need sudo and its temprarily access ? to prevent malicious programs from compromising the system 
 			and prevent accidents.
 		* Spoody example.
+	- UFW
+		* Program user interface for netfilter firewall.
+		* firewall: A program that monitors network traffic.
+		* netfilter: 
+		!!!!!!TODO: redo this part
+	- SSH
+		* A program that allows you to connect to computer/server and execute commands in that machine remotely in a secure way.
+		* sys admins use it to troublshoot servers, send and recieve files to be physically where the server is.
+		* its advantages:
+			- Encrypting data.
+			- Authentication.
+		!!!!!!TODO: go a bit more into how its advantages work.
+	- cron
+		* A program that enables you to run shell commands periodicaly and automatically.
+		* its uses:
+			- Periodically Backup the system.
+			- Periodically update thes system. 
+			- Periodacilly Send reports about the current state of the server or website, or send emails in case of problems.
+		!!!!!!!TODO: understand how it works better especially those cron commands.
