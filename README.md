@@ -129,6 +129,8 @@ My Notes about anything especially programming / tech related.
     * use `hostname` to display the current hostname.  
     * use `sudo hostname new-hostname`  to temporarily change the current sessions hostname.  
     * to change the hostname forever, edit the files: `/etc/hostname` and `/etc/hosts`.  
+    * sudo hostnamectl set-hostname <newhostname> - Changes the hostname.
+    	   sudo nano /etc/hosts - And then change the old hostname for the new one
 # groups and users:  
     * Create a new group: sudo groupadd nameofthegroup.  
     * Add users to a group, sudo usermod -aG groupsname user.  	
