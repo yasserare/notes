@@ -111,7 +111,8 @@ My Notes about anything especially programming / tech related.
 	- Defaults log_input,log_output - To create the logs of the inputs and outputs of every use of sudo.  
 	- Defaults iolog_dir="/var/log/sudo" - The directory where those logs will be stored (created previously).  
 	- Defaults secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin" - To restrict the PATHs that can be used by sudo specifically to those specified.  
- 	- TTY: 
+ 	- TTY:  TTY is the Operating system's way of differentiating between ssh remote login and local shell user or between multiple remote users.
+  		Example: a Programmer open a sudo session using ssh and start working on a website that has a database, 
  # UFW:  
     * What is a firewall ?  
          - It is A software or device (usually a software), that monitors and filter network traffic thus providing a level of protection to the user.  
