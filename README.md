@@ -6,7 +6,10 @@ My Notes about anything especially programming / tech related.
 - It essentialy means creating a simulation of hardware or software in a software environement.
 - Its uses:
     * Running multiple Operating systems and computers from the same computer and operating system.
-    * 
+#Evaluation
+	- Be polite, stimulate a coding review at work with a co worker.
+	- It should be at least 15 to 20 minutes.
+   	- Check norm first, no unimportant norm error.
 # Superintelligence  
 - Ways of reaching AGI:  
    * AI:  
