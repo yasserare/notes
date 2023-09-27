@@ -209,8 +209,10 @@ My Notes about anything especially programming / tech related.
 [Keyboard shortcuts and cli commands]
 	-Move current application to another workspace
 		shift + ctrl + alt + arrow 
-	-count how many lines ls will dispay
+	-Count how many lines ls will dispay
 		ls | wc -l 
+  	-Vscode multiline comment
+   		ctrl + atl + a
 [algorithms]
 -steps tp accomplish a task
 	algorithm of solving coding problems:
