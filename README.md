@@ -87,6 +87,13 @@ My Notes about anything especially programming / tech related.
         * Make a grand gesture:
              - Make huge efforts to provide a deep work session, the bigger the effort the better. This will conciousely and unconciousely will stress you (in a good way) to go deeper than usual.
         * Open offices and 13 like places are great places for miracles to happen especially when there is diversity in disciplines, but it open working places should be combines with sound proof closed rooms(not necessarily this exact idea, it could be just your own home desk) for deep work.
+     - The four disciplines of deep work:
+       	1. Focus on the most important: For deep work sessions, that means trying to acheieve ambitious scary tasks in those deep work sessions, for example,
+you can aim for reaching a tough task in a short time BUT make it realistic.
+	2. try to get feedback constatly, because it is a good metric and it can help you work deeper, better and thus tweak as neded, Measure your deep Work sessions(use that graph website you have made) or use some measurement specific to that task (for example: measure how much comparable codeforces challeges you solved...)
+	3. Keep the Score: keep track of the hours spent on deep work and put it in a place where it cannot be ignored, you can for example: keep a record of total deep work hours, associate milestones or accomplishments to those deep work sessions. all this to motivate yourself.
+	4. Accountability: maybe set aside a time (for example, weekly) to study last weeks deep work performance, identify where you fucked up and where you did better, where you could improve and notice pattrens and derive helpful tips and habits.
+
          
 # LVM (Logical Volume Management):  
    * IT is a form of Storage virtualization.  
