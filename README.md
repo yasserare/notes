@@ -286,7 +286,7 @@ size_t == unsigned integer
 size_t x = 0; x - 1 would wrap. 
 
 Memory leaks
-	
+	- 
 [strlcat]
 	the reason for the if statemnent is because if size == 0 then (size - 1 == huge positive number)
 what is a static library ? it is the collection of the object files. its purpose is to cut down time and effort for programmers and make it easier to code.
@@ -352,6 +352,8 @@ ellipses == ...
 					example of stdout redirection:	ls (this is a normal example of stdout) / ls > file.txt (is an example of stdout redirection)
 [get_next_line]
 	[static variables]
+ 		- They are variable that retain their value even after their mother function is destroyed.
+   		- Initialized static variables live in the DATA segment and unInitialized ones live in the BSS segment.
 		-They are only initialized once.
 		-"normal" local variables are destroyed when their scope(function) is destroyed
 					 
