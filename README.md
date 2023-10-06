@@ -383,7 +383,8 @@ ellipses == ...
 	-copy the content of a file to the clipboard
 		cat main.c | xclip -sel clip
 [virtualization] 
-
+[42 network]
+	you can set the header for files in vim using: f1
 [extreme C]
 source code = programming statments(c code)
 COMPILATION PIPELINE
