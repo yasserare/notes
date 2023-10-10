@@ -6,7 +6,7 @@ My Notes about anything especially programming / tech related.
  	- PID: non-negative integer which is A Numerical IDentifier given to every process (program running(loaded into memory)).
   	- you can get the PID of a process using `getpid()`.
    	- pid_t a signed integer that can hold the PID given by `getpid()`.
-    	- 
+    	- Process runing => it recieves a signal => OS calls signal handler which basically a function to do something.
 # Virtualization
 - It essentialy means creating a simulation of hardware or software in a software environement.
 - Its uses:
