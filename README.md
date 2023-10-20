@@ -7,6 +7,11 @@ My Notes about anything especially programming / tech related.
   	- you can get the PID of a process using `getpid()`.
    	- pid_t a signed integer that can hold the PID given by `getpid()`.
     	- Process runing => it recieves a signal => OS calls signal handler which basically a function to do something.
+     	- signal() => 
+      	- &: bitwise AND operator, it is an operator that does an operation(sort of like + * - and /) on binary numbers, it compare each bit from both the binary numbers,
+       		if they are both a 1 then the result is 1, otherwise the result is always a 0.
+	- <<: bitwise left shift operation, it is an operation that moves bits into the left and adds a 0 bit to the right, for example, c = 00100101 will be 01001010.
+ 	algo: send every byte in binary form to the client using the kill function and User defined signals.
 # Virtualization
 - It essentialy means creating a simulation of hardware or software in a software environement.
 - Its uses:
