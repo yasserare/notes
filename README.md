@@ -237,6 +237,8 @@ you can aim for reaching a tough task in a short time BUT make it realistic.
 		-you will get a solution in mind, trying to come up with an aditional one 
 		-divide the solution into small parts
 		-implement the solution part by part
+  - how to think of them ?
+    	* Approach 1 => Divide and conquer => divide the problem into small managable problems and then solve each subproblem and then combine them.
 
 [scanf]
 be wary of the following:
