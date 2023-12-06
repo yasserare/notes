@@ -1,7 +1,25 @@
    # notes
 My Notes about anything especially programming / tech related.
-
-#MINITALK
+# Rust 
+	- mut: stands for mutable, which is set to indicate that a variable is not constannt (the opposite of const in C).
+# Python
+	you seem to like python's syntax, example of a code you wrote {i = 0
+t = input("")
+while i < int(t):
+    n = input("")
+    k = 0
+    sum = 0
+    values = input("")
+    current = values.split()
+    while k < int(n):
+        sum += int(current[k])
+        k += 1
+    if int(n) % 2 == 0 and sum % 2 == 0 or int(n) % 2 != 0 and sum % 2 == 0:
+        print("YES")
+    else:    
+        print("NO")
+    i += 1}
+# MINITALK
 	* Two process that communicate with each other.
  	- PID: non-negative integer which is A Numerical IDentifier given to every process (program running(loaded into memory)).
   	- you can get the PID of a process using `getpid()`.
